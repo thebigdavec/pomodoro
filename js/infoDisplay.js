@@ -8,7 +8,7 @@ template.innerHTML = `<style> #display {
     margin: 0 auto 5px;
     text-align: center;
 } </style>
-<div id="display">Display</div>`
+<div id="display"><slot /></div>`
 
 class InfoDisplay extends HTMLElement {
     constructor() {
@@ -16,7 +16,6 @@ class InfoDisplay extends HTMLElement {
 
         this.attachShadow({mode: 'open'})
         this.shadowRoot.appendChild(template.content.cloneNode(true))
-        this.shadowRoot.querySelector('#display').innerText = this.getAttribute('info')
     }
 }
 
