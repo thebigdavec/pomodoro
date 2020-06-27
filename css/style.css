@@ -1,0 +1,19 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-black: #121316;
+    --clr-dark: #2d3039;
+    --clr-mid: #585e71;
+    --clr-light: #9ea5ba;
+    --clr-white: #ced5ea;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+}
